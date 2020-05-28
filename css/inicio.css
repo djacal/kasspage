@@ -1,0 +1,129 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.wave{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+}
+
+header {
+	width: 100%;
+
+}
+
+header nav {
+	/*overflow: hidden;*/
+	background:#00BFA6; 
+	z-index: 2;
+	
+}
+
+
+header nav .logotipo .logo img {
+	width: 60px;
+	float:left;
+	border-radius: 50%;
+	padding: 4px;
+	margin-left: 70px;
+
+}
+
+header nav ul {
+	text-align: center;
+	list-style: none;
+}
+
+header nav ul li {
+	display: inline-block;
+	position: relative;
+
+}
+
+header nav ul li:hover {
+     background:#99D2B1;
+}
+
+header nav ul li a{
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+}
+header nav ul li a span {
+	margin-right: 10px;
+}
+
+header nav ul li:hover .children {
+       display:block;
+}
+
+header nav ul li .children {
+    display: none;
+	background: #00BFA6;
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+}
+
+header nav ul li .children li {
+	display: block;
+
+}
+
+.sumario{
+	margin-left: 100px;
+	padding-top: 30px;
+}
+
+.container-grid {
+	/*margin-top: 30px;*/
+	text-align: center;
+	width: 100%;
+	height: auto;
+	/*border:2px solid #000;*/
+
+}
+.container-grid .cuadros {
+	display: inline-block; 
+	margin-left: 30px;
+	color:#404343;
+	width: 150px;
+	height: 200px;
+	border: 2px solid #404343;
+	border-radius: 4px;
+}
+
+.container-grid .cuadros h5 {
+
+	padding: 10px;
+	background-color: #404343;
+	color: #fff;
+}
+
+.container-grid .cuadros i {
+	font-size: 50px;
+	padding-top: 30px;
+	
+}
+
+.container-grid .cuadros i:hover  {
+	color:#00BFA6;
+}
+
+.container-grid .cuadros p {
+	color: red;
+	font-size: 20px;
+	padding-top: 40px;
+}
